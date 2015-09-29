@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
 
     # Run the VB GUI if needed.
-    vb.gui = true if ENV.fetch('vb_gui', 'false').strip.downcase != 'true'
+    vb.gui = true if ENV.fetch('vb_gui', 'false').strip.downcase == 'true'
 
     # Set sensible defaults.
     vb.customize ["modifyvm", :id, "--memory", "1024"]
