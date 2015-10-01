@@ -10,8 +10,7 @@
   1. Set the Network to "Home" or "Work".
   2. Browse your network for the vagrant share.
   3. Run setup.bat (as administrator).
-  4. Run umich-kms-old.bat (as administrator) if the box is Vista.
-  5. Run umich-kms-new.bat (as administrator) if the box is Win7 or later.
+  4. Run umich-kms-<version>.bat (as administrator).
   6. Shut down.
 5. Repackage if needed:
   * `vagrant package --output ../win7-ie10.box --Vagrantfile Vagrantfile`
