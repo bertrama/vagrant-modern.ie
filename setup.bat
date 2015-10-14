@@ -43,6 +43,8 @@ set WINRM_EXEC=call %SYSTEMROOT%\System32\winrm
 %WINRM_EXEC% set winrm/config/service @{AllowUnencrypted="true"}
 %WINRM_EXEC% set winrm/config/service/auth @{Basic="true"}
 
+tzutil /s "Eastern Standard Time"
+
 ver | find "Version 6.0" > nul
 if %ERRORLEVEL% == 0 goto vista
 
